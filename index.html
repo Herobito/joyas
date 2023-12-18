@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Cosmeticos y joyas Fulanito</title>
+</head>
+<body>
+
+    <header>
+        <h1>Cosmeticos y joyas Fulanito</h1>
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#productos">Productos/Servicios</a></li>
+        <li><a href="#contacto">Formulario de Contacto</a></li>
+    </ul>
+</nav>
+
+        <div class="cart-container">
+            <img src="./imagenes/8146cbe3eb0e43afee75317c3c473741.png" alt="Carrito de compras">
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+   
+
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+            <h3>Bienvenidos a Cosmeticos y joyas Fulanito, tu destino para descubrir la verdadera belleza. En Cosmeticos y joyas Fulanito, creemos en la singularidad de cada individuo y en la capacidad de la belleza para empoderar, inspirar y transformar.
+
+                Nos enorgullece ofrecer una amplia gama de productos de belleza y cuidado personal que no solo realzan tu apariencia, sino que también realzan tu confianza y autoexpresión. Desde maquillaje de tendencia hasta productos de cuidado de la piel diseñados para nutrir y revitalizar, [Nombre de tu Empresa] está comprometido con brindarte productos de alta calidad que te hagan sentir hermoso(a) tanto por dentro como por fuera.   
+                Nuestra misión es ir más allá de los estándares convencionales de belleza y celebrar la diversidad en todas sus formas. Estamos aquí para acompañarte en tu viaje hacia la confianza y el autodescubrimiento.
+                Únete a nosotros en esta emocionante travesía, donde la belleza se encuentra en cada historia y donde tú eres la obra maestra.
+                
+                </h3>
+        <!-- Contenido de la sección Quiénes Somos -->
+    </section>
+
+    <section id="productos">
+        <h2>Productos/Servicios</h2>
+        <!-- Contenido de la sección Productos/Servicios -->
+        <div class="productos-container">
+            <!-- Productos... -->
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="./imagenes/taladro.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $100</p>
+                    <button>Agregar al carrito</button>
+                </div>
+    
+                <div class="producto">
+                    <img src="./imagenes/union.jpeg" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Descripción del producto 2.</p>
+                    <p>Precio: $200</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/huracan.jpeg" alt="Producto 1">
+                    <h3>Producto 3</h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $150</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/juramento.png" alt="Producto 1">
+                    <h3>Producto 4</h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $50</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/juventus.jpeg" alt="Producto 1">
+                    <h3>Producto 5</h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $500</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="./imagenes/liga.jpeg" alt="Producto 1">
+                    <h3>Producto 6</h3>
+                    <p>Descripción del producto 1.</p>
+                    <p>Precio: $1000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Formulario de Consulta (Asistente)</h2>
+        <!-- Contenido del formulario en modo asistente -->
+        <form id="wizard-form" action="#" method="post">
+            <!-- Paso 1 -->
+            <div class="form-step" id="paso-1">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <button type="button" onclick="siguientePaso(2)">Siguiente</button>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="form-step" id="paso-2">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="button" onclick="siguientePaso(3)">Siguiente</button>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="form-step" id="paso-3">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="button" onclick="generarResumen()">Generar Resumen</button>
+            </div>
+
+            <div id="resumen"></div>
+        </form>
+        <section id="resultados-api"></section>
+        <section id="tecnologias">
+            <h2>Tecnologías Utilizadas</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Agrega más tecnologías según sea necesario -->
+            </ul>
+        </section>
+    </section>
+
+    <!-- ... (otro código HTML posterior) ... -->
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

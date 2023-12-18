@@ -1,0 +1,155 @@
+/* Estilos comunes */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./imagenes/vista-superior-anillos-compromiso-espacio-copia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+.cart-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-container img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.cart-count {
+    background-color: #f00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+/* Estilos específicos de las secciones */
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.producto {
+    flex: 0 0 30%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#productos img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#carrito {
+    margin: 2cm;
+    padding: 1cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.1);
+    text-align: center;
+}
+nav {
+    text-align: center; /* Centra el contenido del nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el espaciado entre los elementos según tus preferencias */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Ajusta el color del texto según tus preferencias */
+    font-weight: bold; /* Ajusta el peso de la fuente según tus preferencias */
+}
+
+#tecnologias {
+    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
+
+#tecnologias h2 {
+    color: #007BFF; /* Ajusta el color del título según tus preferencias */
+}
+
+#tecnologias ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tecnologias li {
+    margin-bottom: 8px; /* Ajusta el espaciado entre los elementos de la lista según tus preferencias */
+}
+
+/* Estilos para la sección de tecnologías */
+#tecnologias {
+    margin-top: 20px;
+}
+
+#tecnologias h2 {
+    color: #007BFF;
+}
+
+#tecnologias ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tecnologias li {
+    margin-bottom: 8px;
+}
+
+/* Agrega más estilos según sea necesario para otras secciones */
